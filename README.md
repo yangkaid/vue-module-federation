@@ -12,7 +12,7 @@ remotes: {
 }
 ```
 
-# 規則
+# Rules
 
 import("app2/App")，app2 此名稱對應 remotes 中物件的 key，App 是嵌入的組件名稱
 
