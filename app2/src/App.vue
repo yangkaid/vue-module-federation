@@ -4,13 +4,14 @@ import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
+  <h1>APP2</h1>
   <nav>
-    <routerLink to="/">Home</routerLink> |
-    <routerLink to="/sa/about">About</routerLink> |
-    <routerLink to="/sa/localstorage">LocalStorage</routerLink>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/sa/about">About</router-link> |
+    <router-link to="/sa/localstorage">LocalStorage</router-link>
   </nav>
   <main>
-    <router-view />
+    <router-view></router-view>
   </main>
 </template>
 
