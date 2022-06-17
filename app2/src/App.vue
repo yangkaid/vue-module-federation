@@ -4,7 +4,14 @@ import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
-  <h1>APP2</h1>
+  <nav>
+    <routerLink to="/">Home</routerLink> |
+    <routerLink to="/sa/about">About</routerLink> |
+    <routerLink to="/sa/localstorage">LocalStorage</routerLink>
+  </nav>
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <style>
@@ -21,7 +28,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 h1 {
   margin: 10px;
   padding: 10px;
-  text-align: "center";
+  text-align: center;
   background-color: red;
 }
 </style>

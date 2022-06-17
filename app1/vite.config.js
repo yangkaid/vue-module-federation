@@ -12,9 +12,9 @@ export default defineConfig({
       name: "app1",
       filename: "remoteEntry.js",
       remotes: {
-        app3: "http://localhost:4173/assets/remoteEntry.js",
+        app2: "http://localhost:4173/assets/remoteEntry.js",
       },
-      shared: ["vue"],
+      shared: ["vue", "vue-router", "vuex"],
     }),
   ],
   resolve: {

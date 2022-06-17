@@ -4,7 +4,7 @@ import { defineAsyncComponent } from "vue";
 export default {
   name: "App",
   components: {
-    RemoteApp: defineAsyncComponent(() => import("app3/App")),
+    RemoteApp: defineAsyncComponent(() => import("app2/App")),
   },
 };
 </script>
@@ -29,7 +29,7 @@ export default {
 h1 {
   margin: 10px;
   padding: 10px;
-  text-align: "center";
+  text-align: center;
   background-color: cyan;
 }
 </style>
