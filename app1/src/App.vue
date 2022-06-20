@@ -11,7 +11,7 @@ export default {
 
 <template>
   <h1>APP1</h1>
-
+  <hr />
   <RemoteApp></RemoteApp>
 </template>
 
