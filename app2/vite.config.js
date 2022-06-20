@@ -13,6 +13,8 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./App": "./src/App.vue",
+        "./About": "./src/views/About.vue",
+        "./LocalStorage": "./src/views/LocalStorage.vue",
       },
       shared: ["vue", "vue-router", "vuex"],
     }),
@@ -23,9 +25,11 @@ export default defineConfig({
     },
   },
   build: {
+    polyfillModulePreload: false,
+    assetsInlineLimit: 40960,
     target: "esnext",
     minify: false,
-    cssCodeSplit: true,
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
         minifyInternalExports: false,

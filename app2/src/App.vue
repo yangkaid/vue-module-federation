@@ -1,15 +1,16 @@
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+<script>
+export default {
+  name: "App",
+};
 </script>
 
 <template>
   <h1>APP2</h1>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/sa/about">About</router-link> |
-    <router-link to="/sa/localstorage">LocalStorage</router-link>
-  </nav>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/localstorage">LocalStorage</router-link>
+  </nav> -->
   <main>
     <router-view></router-view>
   </main>
