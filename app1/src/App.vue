@@ -1,18 +1,14 @@
 <script>
-import { defineAsyncComponent } from "vue";
-
 export default {
   name: "App",
-  components: {
-    RemoteApp: defineAsyncComponent(() => import("app2/App")),
-  },
 };
 </script>
 
 <template>
   <h1>APP1</h1>
   <hr />
-  <RemoteApp></RemoteApp>
+  <div>123123</div>
+  <router-view></router-view>
 </template>
 
 <style>

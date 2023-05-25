@@ -1,26 +1,28 @@
 <template>
-  <h1>About</h1>
-  <pre>counter: {{ $store.state.counter }}</pre>
-  <button @click="$store.dispatch('increment')">+</button>
-  <button @click="goGoLocalstorage">go to localstorage</button>
+    <div id="AboutView"></div>
+    <AboutView></AboutView>
+    {{ msg }}
+    <button @click="goGoLocalstorage">改变</button>
 </template>
 
 <script>
-import { useRouter } from "vue-router";
-
+import AboutView from 'app3/AboutView'
+import { vue2ToVue3 } from "../utils/vue2Tovue3";
 export default {
   name: "About",
-  setup() {
-    const router = useRouter();
-
-    const goGoLocalstorage = () => {
-      router.push("/localstorage");
-    };
-
-    return {
-      goGoLocalstorage,
-    };
+  mounted() {
+    vue2ToVue3(AboutView, 'AboutView')
   },
+  data() {
+    return {
+      msg: '123'
+    }
+  },
+  methods: {
+    goGoLocalstorage() {
+      this.msg = '哈哈哈'
+    }
+  }
 };
 </script>
 

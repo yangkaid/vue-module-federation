@@ -9,13 +9,18 @@ export default createRouter({
       component: () => import("./views/Home.vue"),
     },
     {
-      name: "About",
-      path: "/about",
-      component: () => import("app2/About"),
-    },
-    {
-      path: "/localstorage",
-      component: () => import("app2/LocalStorage"),
-    },
+      name: 'About',
+      path: '/about',
+      component: () => import('./views/About.vue')
+     }
+    // {
+    //   name: "About",
+    //   path: "/about",
+    //   component: () => import("app2/About"),
+    // },
+    // {
+    //   path: "/localstorage",
+    //   component: () => import("app2/LocalStorage"),
+    // },
   ],
 });
